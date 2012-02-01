@@ -1,4 +1,10 @@
 Escola::Application.routes.draw do
+  resources :courses
+
+  resources :students
+
+  resources :teachers
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
