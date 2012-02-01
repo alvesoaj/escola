@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= f.label "Professor" %><br />
+    <%= f.select :teacher_id, Teacher.all.map {|t| [t.name, t.id]}, {:include_blank => "Selecione o professor"} %>
+  </div>
+
+  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>

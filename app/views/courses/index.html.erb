@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Professor</th>
     <th>Name</th>
     <th>Description</th>
     <th>Period</th>
@@ -12,6 +13,7 @@
 
 <% @courses.each do |course| %>
   <tr>
+    <td><%= course.teacher.name %></td>
     <td><%= course.name %></td>
     <td><%= course.description %></td>
     <td><%= course.period %></td>

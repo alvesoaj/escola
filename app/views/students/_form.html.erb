@@ -11,17 +11,23 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label "Id" %><br />
+    <%= f.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Nome" %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label "E-mail" %><br />
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :birthdate %><br />
-    <%= f.datetime_select :birthdate %>
+    <%= f.label "Data de nascimento" %><br />
+    <%= f.datetime_select :birthdate, :start_year => 2012, :end_year => 2050 %>
   </div>
   <div class="actions">
     <%= f.submit %>
