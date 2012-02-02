@@ -13,3 +13,19 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+/*
+function limpar(){
+	$("input").val('');
+}
+
+$(document).ready(function(){
+	$("input").focus(function(){
+		$(this).val("Prencha corretamente os campos!!!");
+		setTimeout(function(){
+			limpar()
+			}, 3000);
+	})
+})
+
+*/

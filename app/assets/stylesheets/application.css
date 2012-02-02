@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
 */
+
+/*
+.titulo {
+	background-color: green;
+}
+
+table, td, th{
+	border-style:solid;
+	border-width:5px;
+}
+
+*/
