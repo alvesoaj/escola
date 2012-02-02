@@ -2,6 +2,9 @@ class Course < ActiveRecord::Base
 	belongs_to :teacher
 	has_many :students
 
-	validates_presence_of :teacher_id
-	validates_uniqueness_of :name
+	validates_associated :teacher
+
+	validates :teacher_id, :name, :description, :presence => true
+
+	validates :name, :uniqueness => true
 end

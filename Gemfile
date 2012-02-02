@@ -9,6 +9,11 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production do
+  gem 'thin'
+  gem 'pg'
+end
+
 gem 'heroku'
 
 # Gems used only for assets and not required
@@ -21,11 +26,6 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
-end
-
-group :production do
-  gem 'thin'
-  gem 'pg'
 end
 
 gem 'jquery-rails'
