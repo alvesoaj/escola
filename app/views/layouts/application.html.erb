@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>Escola</title>
-		<%= stylesheet_link_tag    "application", :media => "all" %>
-		<%= javascript_include_tag "application" %>
+		<%= stylesheet_link_tag    "application", "sfsdflj.css" %>
+		<%= javascript_include_tag "application", "prototype" %>
 		<%= csrf_meta_tags %>
 	</head>
 
 	<body>
+		<%= image_tag("escola.jpg", :size => "200x200") %>
 		<%= t :hello %>
 		<%= yield %>
 	</body>

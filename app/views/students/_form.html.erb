@@ -11,6 +11,11 @@
     </div>
   <% end %>
 
+    <div class="field">
+    <%= f.label :course_id %><br />
+    <%= f.select :course_id, Course.all.map {|c| [c.name, c.id]}, {:include_blank => "Selecione o curso"} %>
+  </div>
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
