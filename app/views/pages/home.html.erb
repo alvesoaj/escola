@@ -1,0 +1,12 @@
+<h1>Bem Vindo ao site Escola <%= current_user.email if user_signed_in? %></h1>
+
+<% if user_signed_in? %>
+	<p><%= link_to("Sair", logout_path) %></p>
+<% else %>
+	<p><%= link_to("Cadastrar", cadastrar_path) %></p>
+	<p><%= link_to("Logar", login_path) %></p>
+<% end %>
+
+<p><%= link_to("Alunos", students_path) %></p>
+<p><%= link_to("Cursos", courses_path) %></p>
+<p><%= link_to("Professores", teachers_path) %></p>

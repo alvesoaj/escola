@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  filter_access_to :all
+
   # GET /courses
   # GET /courses.json
   def index
