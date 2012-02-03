@@ -2,15 +2,14 @@
 <html>
 	<head>
 		<title>Escola Feliz</title>
-		<%= stylesheet_link_tag    "application", :media => "all" %>
-		<%= javascript_include_tag "application" %>
-
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "application", "prototype" %>
 		<%= csrf_meta_tags %>
 	</head>
 
 	<body>
 		<div class="titulo">
-			<%#= image_tag "escola.jpg", :size => "250x250" %><h1><%= t :hello %></h1>
+			<%= image_tag "escola.jpg", :size => "250x250" %><h1><%= t :hello %></h1>
 		</div>
 
 		<div>

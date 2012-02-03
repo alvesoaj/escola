@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 
-/*
 function limpar(){
 	$("input").val('');
 }
@@ -27,5 +26,3 @@ $(document).ready(function(){
 			}, 3000);
 	})
 })
-
-*/
