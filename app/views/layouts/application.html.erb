@@ -11,6 +11,9 @@
 		<div class="titulo">
 			<%= image_tag "escola.jpg", :size => "250x250" %><h1><%= t :hello %></h1>
 		</div>
+		<p><%= link_to("HOME", root_path) %></p>
+		<p><%= notice %></p>
+		<p><%= alert %></p>
 
 		<div>
 			<%= yield %>

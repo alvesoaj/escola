@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   #mensagem em caso de usuário não autorizado
   protected
     def permission_denied
-      flash[:error] = "Desculpe, você não tem permisão para acessar esta área."
+      flash[:alert] = "Desculpe, você não tem permisão para acessar esta área."
       redirect_to root_url
     end
 end

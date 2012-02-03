@@ -1,7 +1,12 @@
 Escola::Application.routes.draw do
   devise_for :users
 
-  #resources :users
+  devise_scope :user do
+    get 'login' => 'devise/sessions#new', :as => "login"
+    get 'logout' => 'devise/sessions#destroy', :as => "logout"
+    get '/cadastrar' => 'devise/registrations#new',:as => "cadastrar"
+  end
+  resources :users
 
   resources :courses
 
