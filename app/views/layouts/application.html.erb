@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Escola</title>
-		<%= stylesheet_link_tag    "application", "sfsdflj.css" %>
+		<title>Escola Feliz</title>
+		<%= stylesheet_link_tag    "application" %>
 		<%= javascript_include_tag "application", "prototype" %>
 		<%= csrf_meta_tags %>
 	</head>
 
 	<body>
-		<%= image_tag("escola.jpg", :size => "200x200") %>
-		<%= t :hello %>
-		<%= yield %>
+		<div class="titulo">
+			<%= image_tag "escola.jpg", :size => "250x250" %><h1><%= t :hello %></h1>
+		</div>
+
+		<div>
+			<%= yield %>
+		<div>
 	</body>
 </html>
